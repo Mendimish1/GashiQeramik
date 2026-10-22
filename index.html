@@ -1,95 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sq">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GashiQeramik</title>
-    <style>
-      :root {
-        --bg: #f8f4ee;
-        --card: #fffdfb;
-        --text: #1f1b18;
-        --muted: #5c524d;
-        --accent: #b7783d;
-        --accent-dark: #8e5d2b;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(180deg, #f7f1e9 0%, #f5efe9 100%);
-        color: var(--text);
-      }
-      .container {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 32px;
-      }
-      .card {
-        max-width: 760px;
-        width: 100%;
-        background: var(--card);
-        border: 1px solid rgba(183,120,61,0.2);
-        border-radius: 20px;
-        box-shadow: 0 20px 50px rgba(66, 42, 22, 0.08);
-        padding: 48px 40px;
-        text-align: center;
-      }
-      .badge {
-        display: inline-block;
-        background: rgba(183,120,61,0.12);
-        color: var(--accent-dark);
-        border: 1px solid rgba(183,120,61,0.25);
-        padding: 8px 14px;
-        border-radius: 999px;
-        font-size: 12px;
-        font-weight: bold;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      h1 {
-        font-size: clamp(2.2rem, 4vw, 4rem);
-        margin: 22px 0 16px;
-        line-height: 1.1;
-      }
-      p {
-        margin: 0 auto;
-        max-width: 560px;
-        color: var(--muted);
-        font-size: 1.05rem;
-        line-height: 1.7;
-      }
-      .cta {
-        margin-top: 28px;
-        display: inline-block;
-        background: var(--accent);
-        color: white;
-        text-decoration: none;
-        border-radius: 999px;
-        padding: 14px 24px;
-        font-weight: 600;
-        transition: 0.2s ease;
-      }
-      .cta:hover {
-        background: var(--accent-dark);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="card">
-        <div class="badge">GashiQeramik</div>
-        <h1>Mirë se vini në GashiQeramik</h1>
-        <p>
-          Ky është faqja e publikuar me GitHub Pages. Repoja është e gatshme dhe faqja
-          përmban një faqe bazë të vendosur për t'u shfaqur publikisht.
-        </p>
-        <a class="cta" href="https://github.com/Mendimish1/GashiQeramik" target="_blank" rel="noreferrer">
-          Shiko repo-n
-        </a>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gashi Qeramik — Shtrim Qeramike & Montim Lavamanësh</title>
+<meta name="description" content="Gashi Qeramik — shtrim profesional i pllakave qeramike, montim lavamanësh dhe butona qeramike për WC në Kosovë.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="logo-mark"></span>Gashi Qeramik</a>
+    <nav class="links" id="links">
+      <a href="#sherbimet">Shërbimet</a>
+      <a href="#pse-ne">Pse ne</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#kontakti">Kontakti</a>
+    </nav>
+    <a href="#kontakti" class="btn">Kërko ofertë</a>
+    <button class="menu-btn" aria-label="Menyja" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Punime me qeramikë</div>
+      <h1>Shtrim <em>qeramike</em> i bërë me saktësi.</h1>
+      <p>Shtrojmë pllaka qeramike në dysheme dhe mure, montojmë lavamanë dhe veshim butonat e WC-së me qeramikë. Ju sillni materialin, ne kujdesemi që puna të dalë e pastër dhe e qëndrueshme.</p>
+      <div class="cta">
+        <a href="#sherbimet" class="btn">Shiko shërbimet</a>
+        <a href="tel:+38344000000" class="btn ghost">Na telefononi</a>
+      </div>
+      <div class="stats">
+        <div><strong>10+</strong><small>vjet përvojë</small></div>
+        <div><strong>500+</strong><small>projekte të kryera</small></div>
+        <div><strong>100%</strong><small>klientë të kënaqur</small></div>
       </div>
     </div>
-  </body>
+    <div class="hero-img"><img src="https://images.unsplash.com/photo-1523413307857-ef24c53571ae?auto=format&fit=crop&w=900&q=80" alt="Mjeshtër duke vendosur pllakë qeramike"></div>
+  </div>
+</section>
+
+<section id="sherbimet">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Shërbimet tona</div>
+      <h2>Çfarë ofrojmë</h2>
+      <p>Tri lloje punimesh, një standard cilësie.</p>
+    </div>
+    <div class="products">
+      <article class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1523350165414-082d792c4bcc?auto=format&fit=crop&w=700&q=80" alt="Pllaka qeramike të shtruara" loading="lazy">
+        <div class="card-body">
+          <h3>Shtrimi i pllakave</h3>
+          <p>Shtrojmë qeramikë në banjo, kuzhinë, dysheme dhe terrasa — me nivelim të saktë dhe fuga të pastra.</p>
+          <ul><li>Pllaka muri dhe dyshemeje</li><li>Granit-qeramikë formate të mëdha</li><li>Terrasa dhe ambiente të jashtme</li></ul>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1576698483491-8c43f0862543?auto=format&fit=crop&w=700&q=80" alt="Lavaman qeramik i montuar" loading="lazy">
+        <div class="card-body">
+          <h3>Montimi i lavamanëve</h3>
+          <p>Montojmë lavamanë qeramikë në mënyrë të sigurt, të drejtë dhe pa rrjedhje.</p>
+          <ul><li>Lavamanë mbi pult</li><li>Lavamanë të varur në mur</li><li>Lavamanë me dollap</li></ul>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card-img" src="images/wc-buton.png" alt="Buton shkarkimi i WC-së i veshur me qeramikë" loading="lazy">
+        <div class="card-body">
+          <h3>Butona qeramike për WC</h3>
+          <p>Veshim butonin e shkarkimit të WC-së me të njëjtën pllakë si muri, që të duket i integruar dhe pothuajse i padukshëm.</p>
+          <ul><li>Buton i veshur me pllakën e murit</li><li>Prerje e saktë dhe fuga të holla</li><li>Pamje e pastër dhe moderne</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="pse-ne" class="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Pse Gashi Qeramik</div>
+      <h2>Punë e bërë si duhet</h2>
+      <p>Kujdesemi për çdo detaj, që rezultati të zgjasë me vite.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="ic">✦</div><h3>Punë e garantuar</h3><p>Qëndrojmë pas çdo punimi që bëjmë.</p></div>
+      <div class="why-item"><div class="ic">◈</div><h3>Këshillim falas</h3><p>Ju ndihmojmë të zgjidhni materialin dhe sasinë e duhur.</p></div>
+      <div class="why-item"><div class="ic">⚒</div><h3>Ekip me përvojë</h3><p>Punojmë me saktësi dhe e lëmë hapësirën të pastër.</p></div>
+      <div class="why-item"><div class="ic">€</div><h3>Çmime korrekte</h3><p>Ofertë e qartë, pa kosto të fshehura.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Galeria</div>
+      <h2>Disa nga punët tona</h2>
+      <p>Banjo, kuzhina dhe hapësira të transformuara me qeramikë.</p>
+    </div>
+    <div class="gallery">
+      <div class="g g1" data-label="Dysheme me pllaka" style="background-image:url('https://images.unsplash.com/photo-1656646523907-97b094c7e63a?auto=format&fit=crop&w=1000&q=80')"></div>
+      <div class="g g2" data-label="Dysheme bardh e zi" style="background-image:url('https://images.unsplash.com/photo-1639399524499-6ec564b8fee3?auto=format&fit=crop&w=600&q=80')"></div>
+      <div class="g g3" data-label="Dush me pllaka" style="background-image:url('https://images.unsplash.com/photo-1690603935238-b60582bcb273?auto=format&fit=crop&w=600&q=80')"></div>
+      <div class="g g4" data-label="Mur me mozaik" style="background-image:url('https://images.unsplash.com/photo-1758832505443-26bfecea4669?auto=format&fit=crop&w=600&q=80')"></div>
+      <div class="g g5" data-label="Montim lavamanësh" style="background-image:url('https://images.unsplash.com/photo-1756079664354-34944e001f6d?auto=format&fit=crop&w=1000&q=80')"></div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakti">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Kontakti</div>
+      <h2>Kërkoni një ofertë falas</h2>
+      <p>Na shkruani se çfarë ju duhet dhe ju kthejmë përgjigje sa më shpejt.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="info">
+        <h3>Na gjeni</h3>
+        <div class="row"><span class="ic">📍</span><div><b>Adresa</b>Rruga ..., Kosovë</div></div>
+        <div class="row"><span class="ic">📞</span><div><b>Telefoni</b><a href="tel:+38344000000">+383 44 000 000</a></div></div>
+        <div class="row"><span class="ic">✉</span><div><b>Email</b><a href="mailto:info@gashiqeramik.com">info@gashiqeramik.com</a></div></div>
+        <div class="row"><span class="ic">🕘</span><div><b>Orari</b>E hënë – E shtunë, 08:00 – 18:00</div></div>
+      </div>
+      <form id="form">
+        <div><label for="n">Emri</label><input id="n" required placeholder="Emri juaj"></div>
+        <div><label for="p">Telefoni</label><input id="p" type="tel" required placeholder="+383 ..."></div>
+        <div><label for="s">Jam i interesuar për</label>
+          <select id="s"><option>Shtrim pllakash</option><option>Montim lavamani</option><option>Buton qeramik për WC</option><option>Tjetër</option></select></div>
+        <div><label for="m">Mesazhi</label><textarea id="m" placeholder="Përshkruani projektin tuaj..."></textarea></div>
+        <button class="btn" type="submit" style="border:0;cursor:pointer">Dërgo në WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="y"></span> Gashi Qeramik. Të gjitha të drejtat të rezervuara.</span>
+    <span>Shtrim qeramike · Montim lavamanësh · Butona qeramike për WC</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/38344000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
 </html>
